@@ -1,7 +1,8 @@
 # TODO: Understand this comment
 # Full contents of Dockerfile
 # See: https://hub.docker.com/r/continuumio/miniconda3
-FROM continuumio/miniconda3@sha256:166ff37fba6c25fcad8516aa5481a2a8dfde11370f81b245c1e2e8002e68bcce
+# Base image latest
+FROM continuumio/miniconda3:latest
 LABEL description="Base docker image with conda and util libraries"
 ARG ENV_NAME="pbsv"
 
