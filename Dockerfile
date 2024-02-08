@@ -16,7 +16,7 @@ ENV PATH /opt/conda/envs/${ENV_NAME}/bin:$PATH
 # Install procps so that Nextflow can poll CPU usage
 RUN apt-get update && \
     apt-get install -y procps && \
-    apt-get clean -y && \
+    apt-get clean -y
 
 # TODO: Understand why this is needed
 ENV PATH="${PATH}:/root"
