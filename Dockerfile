@@ -2,7 +2,7 @@
 # Full contents of Dockerfile
 # See: https://hub.docker.com/r/continuumio/miniconda3
 # Base image latest
-FROM continuumio/miniconda3:latest
+FROM continuumio/miniconda3
 LABEL description="Base docker image with conda and util libraries"
 ARG ENV_NAME="pbsv"
 
