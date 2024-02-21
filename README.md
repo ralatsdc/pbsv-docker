@@ -1,34 +1,22 @@
 # pbsv-docker
 
-Build a Container from bioconda
+[pbsv](https://github.com/PacificBiosciences/pbsv) is a suite of tools to call and analyze structural variants in diploid genomes from PacBio single molecule real-time sequencing (SMRT) reads. pbsv-docker provides Docker files and GitHub Action workflows for building and publishing a Docker image to be used in the [sync-seq](https://github.com/adeslatt/sync-seq) workflow.
 
-Steps to build this docker container.
-1. Look up on [anaconda](https://anaconda.org/) the tool you wish to install
-2. create an `environment.yml` file either manually or automatically
-3. Use the template `Dockerfile` modifying if necessary (in our case we have no custom files for the `src` directory so we do not use that)
-4. Build the Docker Image
-5. Set up GitHub Actions
+sync-seq provides a Nextflow workflow encapsulating the computational components to take output from the 15:1 molar libraries of gDNA:cDNA sequenced on the PacBio Revio following the protocols published by Vollger, Mitchell R., Jonas Korlach, Kiara C. Eldred, Elliott Swanson, Jason G. Underwood, Yong-Han H. Cheng, Jane Ranchalis, et al. 2023. “Synchronized Long-Read Genome, Methylome, Epigenome, and Transcriptome for Resolving a Mendelian Condition.” Preprint. Genetics. https://doi.org/10.1101/2023.09.26.559521.
 
 ### Build
 
 To build your image from the command line:
-* Can do this on [Google shell](https://shell.cloud.google.com) - docker is installed and available
+* You can do this on [Google shell](https://shell.cloud.google.com) since docker is installed and available.
 
 ```bash
-docker build -t [insert appropriate program here] .
+docker build -t pbsv:latest .
 ```
 
-To test this tool from the command line 
-
-Set up an environment variable capturing your current command line:
-```bash
-PWD=$(pwd)
-```
-
-Then mount and use your current directory and call the tool now encapsulated within the environment.
+To test this tool from the command line:
 
 ```bash
-docker run -it -v $PWD:$PWD -w $PWD [insert appropriate command for help message] -h
+docker run -it pbsv:latest pbsv -h
 ```
 
 Disclaimer
