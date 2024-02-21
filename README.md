@@ -13,6 +13,8 @@ To build your image from the command line:
 docker build -t pbsv:latest .
 ```
 
+### Test
+
 To test this tool from the command line:
 
 ```bash
