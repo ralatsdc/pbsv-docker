@@ -1,4 +1,4 @@
-name: pbsv-update
+name: pbsv
 channels:
   - bioconda
   - defaults
