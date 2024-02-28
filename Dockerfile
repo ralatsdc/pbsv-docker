@@ -10,8 +10,8 @@ RUN apt-get update && \
 
 # Install the conda environment
 ARG ENV_NAME="pbsv"
-COPY environment.yml /
-RUN conda env create --quiet --name ${ENV_NAME} --file /environment.yml && \
+COPY environment.yaml /
+RUN conda env create --quiet --name ${ENV_NAME} --file /environment.yaml && \
     conda clean -a
 
 # Add conda installation and root dirs to PATH (instead of doing
