@@ -1,0 +1,6 @@
+name: pbsv-update
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - pbsv
