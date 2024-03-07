@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Run this script in base image:
-# $ docker run -itv $PWD:/root continuumio/miniconda3@sha256:166ff37fba6c25fcad8516aa5481a2a8dfde11370f81b245c1e2e8002e68bcce
+# $ docker run -itv $PWD:/root -w /root continuumio/miniconda3@sha256:166ff37fba6c25fcad8516aa5481a2a8dfde11370f81b245c1e2e8002e68bcce
 eval "$(conda shell.bash hook)"
 conda env create -f update.yaml
 conda activate pbsv
