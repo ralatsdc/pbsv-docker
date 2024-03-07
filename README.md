@@ -1,6 +1,6 @@
 # pbsv-docker
 
-[pbsv](https://github.com/PacificBiosciences/pbsv) is a suite of tools to call and analyze structural variants in diploid genomes from PacBio single molecule real-time sequencing (SMRT) reads. pbsv-docker provides Docker files and GitHub Action workflows for building and publishing a Docker image to be used in the [sync-seq](https://github.com/adeslatt/sync-seq) workflow.
+[pbsv](https://github.com/PacificBiosciences/pbsv) is a suite of tools to call and analyze structural variants in diploid genomes from PacBio single molecule real-time sequencing (SMRT) reads. pbsv-docker provides Docker files and GitHub Action workflows for building and publishing a Docker image so that pbsv can be used in the [sync-seq](https://github.com/adeslatt/sync-seq) workflow.
 
 sync-seq provides a Nextflow workflow encapsulating the computational components to take output from the 15:1 molar libraries of gDNA:cDNA sequenced on the PacBio Revio following the protocols published by Vollger, Mitchell R., Jonas Korlach, Kiara C. Eldred, Elliott Swanson, Jason G. Underwood, Yong-Han H. Cheng, Jane Ranchalis, et al. 2023. “Synchronized Long-Read Genome, Methylome, Epigenome, and Transcriptome for Resolving a Mendelian Condition.” Preprint. Genetics. https://doi.org/10.1101/2023.09.26.559521.
 
