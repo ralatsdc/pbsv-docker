@@ -1,0 +1,6 @@
+name: pbsv
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - pbsv=2.2.2=0
